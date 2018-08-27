@@ -1,6 +1,6 @@
 class PortfoliosController < ApplicationController
   layout'portfolio'
-  
+
   before_action :set_portfolio, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:show]
 
@@ -32,6 +32,7 @@ class PortfoliosController < ApplicationController
 
   def edit
     @portfolio_item = Portfolio.friendly.find(params[:id])
+
   end
 
   def update
@@ -68,7 +69,7 @@ class PortfoliosController < ApplicationController
       params.require(:portfolio).permit(:title,
                                         :subtitle,
                                         :body,
-                                        technologies_attributes: [:name]
+                                        technologies_attributes: [:id, :name]
                                       )
     end
 end
