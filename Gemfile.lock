@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/ddomagoj/despa_view_tool
+  revision: 4814c025f0df3180c5e93802d1806c9de5b5eedc
+  specs:
+    despa_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -212,6 +218,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  despa_view_tool!
   devise (~> 4.4, >= 4.4.1)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
