@@ -4,6 +4,8 @@ class PortfoliosController < ApplicationController
   before_action :authenticate_user!, only: [:show]
 
   layout'portfolio'
+  access all: [:show, :index, :angular], user: {except: [:destroy, :create, :edit, :update, :new]}, site_admin: :all
+
 
   def index
     @portfolio_items = Portfolio.all
