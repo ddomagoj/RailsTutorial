@@ -79,9 +79,6 @@
     <main role="main" class="container">
       <div class="row">
 
-        <%= login_helper %>
-
-
         <%= yield %>
 
         <%# sidebar %>
@@ -119,8 +116,6 @@
           </div>
         </aside><!-- /.blog-sidebar -->
         <%# sidebar end %>
-
-        <%= render "shared/nav", location: 'bottom' %>
 
         <%= source_helper("blog") %><br>
 
